@@ -1,0 +1,25 @@
+package PripremaKol1;
+
+public class Program {
+    public static void main(String[] args) {
+        // Prvi zadatak
+        Osoba osoba1 = new Osoba();
+        Osoba osoba2 = new Osoba("Josip", "Cavar", "565654345");
+
+        System.out.println(osoba1.toString());
+        System.out.println(osoba2.toString());
+
+        Program.promijeniJmbg(osoba2, "32434243");
+
+        System.out.println(osoba2.toString());
+
+        // Peti zadatak
+        Kvadrat k1 = new Kvadrat(5);
+        System.out.printf("Povrsina kvadrata je %f, a opseg kvadrata je %f%n", k1.povrsina(), k1.opseg());
+    }
+
+    public static Osoba promijeniJmbg(Osoba osoba, String noviJmbg) {
+        osoba.setJmbg(noviJmbg);
+        return osoba;
+    }
+}
