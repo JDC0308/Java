@@ -1,0 +1,47 @@
+package PripremaKol1;
+
+public class Osoba {
+    private String ime;
+    private String prezime;
+    private String jmbg;
+
+    public Osoba() {
+        this.ime = "Josip";
+        this.prezime = "NEsto";
+        this.jmbg = "190112121142";
+    }
+
+    public Osoba(String novoIme, String novoPrezime, String noviJmbg) {
+        this.ime = novoIme;
+        this.prezime = novoPrezime;
+        this.jmbg = noviJmbg;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %s", this.ime, this.prezime, this.jmbg);
+    }
+
+
+    // Getters
+    public String getIme() {
+        return this.ime;
+    }
+    public String getPrezime() {
+        return this.prezime;
+    }
+    public String getJmbg() {
+        return this.jmbg;
+    }
+
+    // Setters
+    public void setIme(String novoIme) {
+        this.ime = novoIme;
+    }
+    public void setPrezime(String novoPrezime) {
+        this.prezime = novoPrezime;
+    }
+    public void setJmbg(String noviJmbg) {
+        this.jmbg = noviJmbg;
+    }
+}
