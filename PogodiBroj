@@ -1,0 +1,26 @@
+package PripremaKol1;
+
+import java.util.Scanner;
+
+public class Pogadjanje {
+
+    public static void main(String[] args) {
+        int broj = (int) (Math.floor(Math.random() * 100));
+
+        while(true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Unesi broj: ");
+            int unos = scanner.nextInt();
+
+            if (unos == broj) {
+                break;
+            } else if (unos > broj) {
+                System.out.println("Uneseni broj je veci od random broja");
+            } else {
+                System.out.println("Uneseni broj je manji od random broja");
+            }
+        }
+
+        System.out.println("Pogodili ste broj");
+    }
+}
